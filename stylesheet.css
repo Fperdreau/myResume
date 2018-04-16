@@ -1,0 +1,238 @@
+@page :left {
+    margin: 0mm;
+}
+
+@page :right {
+    margin: 0mm;
+}
+
+html {
+    width: 21cm;
+    height: 29cm;
+    font-size: 10pt;
+    margin: 0;
+}
+
+body {
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', Calibri, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+    background: rgba(255,255,255,1);
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(105, 155, 134);
+}
+
+strong {
+    font-weight: 500;
+    color: rgb(105, 155, 134);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-left: -12px;
+    background: url('img/dot64x64.png') no-repeat 0 50%;
+        background-size: auto auto;
+    background-size: 12px 12px;
+    padding-left: 14px;
+    text-align: left;
+}
+
+div#footer {
+    border-top: 2px solid rgb(105, 155, 134);
+    padding-top: 5px;
+    font-size: 0.8em;
+    margin-top: 75px;
+}
+
+div#footer > div {
+    text-align: right;
+    display: inline;
+    margin-left: 5px;
+}
+
+div#footer div.icon {
+    width: 20px;
+    height: 20px;
+    background: rgb(105, 155, 134);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+}
+
+div#footer div.icon > img {
+    width: 14px;
+    height: 14px;
+}
+
+div#side_panel {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div#side_panel > section {
+    margin-top: 10px;
+}
+
+div#main_panel {
+    display: inline-block;
+    vertical-align: top;
+    width: 69%;
+    margin: 0;
+    padding: 0;
+}
+
+div#picture {
+    margin: 20px auto 30px auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background: url('img/photo.png') no-repeat no-repeat 50% 50%;
+    background-size: 150% auto;
+    border: 3px solid rgb(105, 155, 134);
+}
+
+div#picture > img {
+    width: 100%;
+    height: auto;
+}
+
+div#info {
+    padding: 0Zpx;
+}
+
+div.info_container {
+    margin-top: 5px;
+    width: 100%;
+}
+
+div.info_container a {
+    color: black;
+}
+
+div.info_container > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+div.icon {
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+}
+
+div.icon > img {
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+section {
+    margin-top: 0px;
+    padding: 5px 10px 2px 10px;
+    page-break-inside: avoid;
+}
+
+section > .title {
+    font-size: 2em;
+    font-weight: 400;
+    color:  rgb(105, 155, 134);
+    margin-left: -5px;
+}
+
+section > .content {
+    margin-top: 10px;
+    padding: 5px;
+    border-left: 2px solid rgb(105, 155, 134);
+}
+
+section .item {
+    margin-bottom: 10px;
+}
+
+.item .content {
+    padding: 10px;
+}
+
+.item .date {
+    text-align: right;
+    color:  rgb(105, 155, 134);
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.item .title {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.item .location {
+    font-size: 1em;
+    font-style: italic;
+}
+
+.item .description {
+    margin-top: 5px;
+}
+
+.item-inline {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.item-inline .content > div {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.item-inline .title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color:  rgb(105, 155, 134);
+}
+
+.item-inline .organism {
+    width: 100%;
+}
+
+#name {
+    line-height: 1em;
+    color:  rgb(105, 155, 134);
+    font-size: 30pt;
+    font-weight: 500;
+    text-align: right;
+}
+
+.keyword {
+    font-weight: 700;
+}
+
+#punchline {
+    font-style: italic;
+    padding: 10px;
+}
