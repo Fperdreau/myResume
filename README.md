@@ -2,7 +2,7 @@
 
 Nothing more than my resume actually.
 
-A live version can be found [here](www.florianperdreau.fr/myResume/)
+A live version can be found [here](https://www.florianperdreau.fr/myResume/)
 
 ## Buld a PDF version
 
