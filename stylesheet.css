@@ -160,8 +160,8 @@ div#main_panel {
 div#picture {
     margin: 20px auto 30px auto;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     background: url('img/photo.png') no-repeat no-repeat 50% 50%;
     background-size: 150% auto;
     border: 3px solid rgb(105, 155, 134);
