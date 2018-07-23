@@ -1,6 +1,3 @@
-@media all {
-    .page-break { display: none; }
-}
 
 @media print {
     @page :left {
@@ -11,13 +8,14 @@
         margin: 0mm;
     }
 
-    .page-break	{ display: block; page-break-before: always; }
-
     html {
         width: 21cm;
         height: 29cm;
-        font-size: 10pt;
         margin: 0;
+    }
+
+    body {
+        font-size: 10pt;
     }
 
     section {
@@ -39,14 +37,22 @@
     .refcontent a {
         display: none;
     }
+
+    #picture {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen {
     html {
         width: 1000px;
         height: 100%;
-        font-size: 14px;
         margin: auto;
+    }
+
+    body {
+        font-size: 14px;
     }
 
     .footer#side {
@@ -60,14 +66,25 @@
     li {
         margin-top: 10px;
     }
+
+    #picture {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 * {
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
   }
      
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 body {
-    box-sizing: content-box;
     width: 100%;
     height: 100%;
     font-family: 'Ubuntu', Calibri, Arial, sans-serif;
@@ -114,19 +131,23 @@ li {
 .flex-container {
     justify-content: space-around;
     display: flex;
+    display: -webkit-flex; 
     flex-direction: row;
+    -webkit-flex-direction: row;
     padding: 10px;
 }
 
 .flex-column {
     display: flex;
+    display: -webkit-flex; 
     flex-direction: column;
+    -webkit-flex-direction: column;
 }
 
 .flex-panel {
     display: block;
     break-inside: avoid;
-    padding: 5px;
+    page-break-before: always;
 }
 
 .flex-panel__content {
@@ -146,15 +167,38 @@ li {
     padding: 0;
 }
 
+section {
+    margin-top: 20px;
+    padding: 5px 10px 2px 10px;
+    break-inside: avoid;
+    page-break-after: always;
+}
+
+section > .title {
+    font-size: 2em;
+    font-weight: 400;
+    color:  rgb(105, 155, 134);
+    margin-left: -5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: 200;
+    color:  rgb(105, 155, 134);
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .footer {
     border-top: 2px solid rgb(105, 155, 134);
     padding-top: 5px;
     font-size: 0.8em;
-    margin-top: 75px;
 }
 
 .footer#side {
     text-align: left;
+    border-top: 0px !important;
 }
 
 .footer#main {
@@ -162,7 +206,7 @@ li {
     padding: 10px 0;
 }
 
-.footer > div {
+.footer#main > div {
     text-align: right;
     display: inline;
     margin-left: 5px;
@@ -182,11 +226,9 @@ li {
     height: 24px;
 }
 
-div#picture {
-    margin: 20px auto 30px auto;
+#picture {
+    margin: 30px auto 30px auto;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
     background: url('img/photo.png') no-repeat no-repeat 50% 50%;
     background-size: 150% auto;
     border: 3px solid rgb(105, 155, 134);
@@ -229,28 +271,6 @@ div.icon > img {
     width: 16px;
     height: 16px;
     vertical-align: middle;
-}
-
-section {
-    margin-top: 20px;
-    padding: 5px 10px 2px 10px;
-    break-inside: avoid;
-}
-
-section > .title {
-    font-size: 2em;
-    font-weight: 400;
-    color:  rgb(105, 155, 134);
-    margin-left: -5px;
-}
-
-h3 {
-    font-size: 1.2em;
-    font-weight: 200;
-    color:  rgb(105, 155, 134);
-    margin-left: 5px;
-    margin-top: 10px;
-    margin-bottom: 5px;
 }
 
 .biblio-container {
@@ -359,6 +379,7 @@ section .item {
 
 .keyword-container {
     margin-top: 5px;
+    text-align: left;
 }
 
 .keyword-container > div {
