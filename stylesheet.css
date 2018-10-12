@@ -137,6 +137,10 @@ li {
     padding: 10px;
 }
 
+.page-break {
+    page-break-before: always;
+}
+
 .flex-column {
     display: flex;
     display: -webkit-flex; 
@@ -159,6 +163,10 @@ li {
     width: 33%;
     margin-top: 20px 0 0 0;
     padding: 0;
+}
+
+.left-panel > section {
+    margin-top: 0px;
 }
 
 .main-panel {
@@ -205,6 +213,22 @@ h3 {
 .footer#side {
     text-align: left;
     border-top: 0px !important;
+}
+
+.footer#side div.icon {
+    width: 20px;
+    height: 20px;
+    background: cadetblue;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 17px;
+}
+
+.footer#side div.icon > img {
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
 }
 
 .footer#main {
@@ -274,8 +298,8 @@ div.icon {
 
 div.icon > img {
     margin: auto;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     vertical-align: middle;
 }
 
@@ -316,25 +340,45 @@ section .item {
     padding: 10px;
 }
 
-.item .date {
+.date {
     text-align: right;
     color:  rgb(105, 155, 134);
     font-size: 1.5em;
     font-weight: 400;
 }
 
-.item .title {
+.title {
     font-size: 1.2em;
     font-weight: 400;
 }
 
-.item .location {
+.location {
     font-size: 1em;
     font-style: italic;
 }
 
-.item .description {
+.table-like {
+    display: table;
+    width: 100%;
+}
+
+.item-inline-table .description, .item .description {
     margin-top: 5px;
+}
+
+.item-inline-table, .item-inline {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.item-inline-table {
+    display: table-row;
+}
+
+.item-inline-table > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding-top: 10px;
 }
 
 .item-inline {
@@ -342,12 +386,15 @@ section .item {
     width: 100%;
 }
 
-.item-inline .content > div {
-    vertical-align: top;
-    display: inline-block;
+.item-inline-table .content {
+    width: 70%;
 }
 
-.item-inline .title {
+.item-inline .content > div {
+    vertical-align: top;
+}
+
+.item-inline-table .title ,.item-inline .title {
     font-size: 1.2em;
     font-weight: 400;
     color:  rgb(105, 155, 134);

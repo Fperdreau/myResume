@@ -8,20 +8,36 @@
     </head>
     <body>
        
-        <div class='flex-container'>
+        <div class='flex-container' id="first_page">
 
             <div class='flex-column left-panel'>
                 <section class='flex-panel'><div id='picture'></div></section>
             
+                <section class='flex-panel' id='info'>
+                    <div class='title'>Contact</div>
+                    <div class='content'>
+                        <div class='info_container'>
+                            <div class='icon'><img src='img/email_24x24.png'/></div>
+                            <div class='info_content'>florian.perdreau@gmail.com</div>
+                        </div>
+                        <div class='info_container'>
+                            <div class='icon'><img src='img/phone_24x24.png'/></div>
+                            <div class='info_content'>+31 6 48 78 79 63</div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class='flex-panel' id='profile'>
                     <div class='title'>Profile</div>
                     <div class='content'>
                         <p class='centered'><strong>"A geek philosopher"</strong>, these are the three words that best describe me.</p>
                         <p class='centered'>What does it mean? <strong>I am passionate about understanding and learning 
                             in general and about coding and data in particular.</strong></p>
-                        <p>In an <strong>ideal professional situation</strong>, I would like to brainstorm hypotheses about possible solutions
-                            to complex problems, design experiments to collect data and apply statistical models to test these hypotheses
-                            in order to get better insights of the problem. <br>Importantly, I would continuously seek for alternative perspectives/technologies to find better solutions or new ways of innovating.</p>
+                        <p>As a <strong>trained research scientist</strong>, I like to <strong>analyze</strong> complex problems and <strong>brainstorm</strong>
+                             hypotheses about possible solutions. Once I have a good hypothesis, then I cannot wait to test it. To do so, I <strong>design experiments</strong> 
+                            for collecting data on which I can apply <strong>statistical models</strong> and get better insights of the problem. 
+                            <br>Importantly, I continuously seek for alternative perspectives/technologies to find better solutions or 
+                            new ways of innovating.</p>
                     </div>
                 </section>
 
@@ -38,69 +54,6 @@
                             <li><strong>Highly adaptable</strong> thanks to an eagerness and an ease to learn</li>
                             <li>Excellent written and oral <strong>communication skills</strong></li>
                         </ul>
-                    </div>
-                </section>
-
-                <section class='flex-panel' id='language'>
-                    <div class="title">Languages</div>
-                    <div class="content">
-                        <ul>
-                            <li>French: native</li>
-                            <li>English: fluent</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class='flex-panel' id='hobbies'>    
-                    <div class="title">Hobbies</div>
-                    <div class="content">
-                        <ul>
-                            <li>Traditional martial arts</li>
-                            <li>Bass guitar</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class='flex-panel' id='info'>
-                    <div class='title'>Personal data</div>
-                    <div class='content'>
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/passport_24x24.png'/></div>
-                            <div class='info_content'>Born in France, 1984</div>
-                        </div>
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/location_24x24.png'/></div>
-                            <div class='info_content'>Utrecht, Netherlands</div>
-                        </div>
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/email_24x24.png'/></div>
-                            <div class='info_content'>florian.perdreau@gmail.com</div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="flex-panel footer" id='side'>
-                    <div class="title">On the web</div>
-                    <div class='content'>
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/www_24x24.png'/></div>
-                            <div class='info_content'><a href='https://www.florianperdreau.fr'>florianperdreau.fr</a></div>
-                        </div>
-
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/linkedin_24x24.png'/></div>
-                            <div class='info_content'><a href='https://www.linkedin.com/in/florianperdreau'>linkedin.com/in/florianperdreau</a></div>
-                        </div>
-
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/github_24x24.png'/></div>
-                            <div class='info_content'><a href='https://github.com/Fperdreau'>github.com/Fperdreau</a></div>
-                        </div>
-
-                        <div class='info_container'>
-                            <div class='icon'><img src='img/gitlab_24x24.png'/></div>
-                            <div class='info_content'><a href='https://gitlab.socsci.ru.nl/fperdreau'>gitlab.socsci.ru.nl/fperdreau</a></div>
-                        </div>
                     </div>
                 </section>
             </div>
@@ -162,36 +115,87 @@
 
                 <section class='flex-panel' id='education'>
                     <div class='title'>Education</div>
-                    <div class='content'>
-                        <div class='item'>
-                            <div class='date'>2011-2014</div>
+                    <div class='content table-like'>
+                        <div class='item-inline-table'>
                             <div class='content'>
                                 <div class='title'>Ph.D in Cognitive psychology</div>
                                 <div class='location'>University Paris Descartes (Paris, France)</div>
                                 <div class='Grade'>Grade: Highest honors</div>
                             </div>
+                            <div class='date'>2011-2014</div>
                         </div>
         
-                        <div class='item'>
-                            <div class='date'>2009-2011</div>
+                        <div class='item-inline-table'>
                             <div class='content'>
                                 <div class='title'>Master degree in Cognitive Sciences</div>
                                 <div class='location'>Ecole Normale Supérieure Ulm, Université Paris Descartes and EHESS (Paris, France)</div>
                                 <div class='Grade'>Grade: TB (Rank #1 in Cognitive Psychology)</div>
                             </div>
+                            <div class='date'>2009-2011</div>
                         </div>
         
-                        <div class='item'>
-                            <div class='date'>2006-2008</div>
+                        <div class='item-inline-table'>
                             <div class='content'>
                                 <div class='title'>Master degree in Philosophy</div>
                                 <div class='location'>University François Rabelais (Tours, France)</div>
                                 <div class='Grade'>Grade: TB</div>
                             </div>
+                            <div class='date'>2006-2008</div>
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
 
+        <div class='flex-container'>
+            <div class="flex-column left-panel">
+                <section class='flex-panel' id='language'>
+                        <div class="title">Languages</div>
+                        <div class="content">
+                            <ul>
+                                <li>French: native</li>
+                                <li>English: fluent</li>
+                            </ul>
+                        </div>
+                    </section>
+    
+                    <section class='flex-panel' id='hobbies'>    
+                        <div class="title">Hobbies</div>
+                        <div class="content">
+                            <ul>
+                                <li>Bass guitar</li>
+                                <li>Traditional martial arts</li>
+                                <li>Video/board gaming</li>
+                            </ul>
+                        </div>
+                    </section>
+    
+                    <section class="flex-panel footer" id='side'>
+                        <div class="title">On the web</div>
+                        <div class='content'>
+                            <div class='info_container'>
+                                <div class='icon'><img src='img/www_24x24.png'/></div>
+                                <div class='info_content'><a href='https://www.florianperdreau.fr'>florianperdreau.fr</a></div>
+                            </div>
+    
+                            <div class='info_container'>
+                                <div class='icon'><img src='img/linkedin_24x24.png'/></div>
+                                <div class='info_content'><a href='https://www.linkedin.com/in/florianperdreau'>linkedin.com/in/florianperdreau</a></div>
+                            </div>
+    
+                            <div class='info_container'>
+                                <div class='icon'><img src='img/github_24x24.png'/></div>
+                                <div class='info_content'><a href='https://github.com/Fperdreau'>github.com/Fperdreau</a></div>
+                            </div>
+    
+                            <div class='info_container'>
+                                <div class='icon'><img src='img/gitlab_24x24.png'/></div>
+                                <div class='info_content'><a href='https://gitlab.socsci.ru.nl/fperdreau'>gitlab.socsci.ru.nl/fperdreau</a></div>
+                            </div>
+                        </div>
+                    </section>
+            </div>
+            <div class='flex-column main-panel'>
                 <section class='flex-panel' id='projects'>
                     <div class='title'>Open-source projects</div>
                     <div class='content'>
@@ -294,6 +298,12 @@
                         </div>
                     </div>
                 </section>
+            </div>
+        </div>
+
+        <div class='flex-container page-break'>
+            <div class="flex-column left-panel"></div>
+            <div class='flex-column main-panel'>
                 
                 <section class='flex-panel' id='publication'>
                     <div class='title'>Publications</div>
