@@ -137,6 +137,10 @@ li {
     padding: 10px;
 }
 
+.breaking-container {
+    page-break-before: always;
+}
+
 .page-break {
     page-break-before: always;
 }
@@ -150,8 +154,12 @@ li {
 
 .flex-panel {
     display: block;
-    break-inside: avoid;
+    page-break-inside: avoid;
     page-break-before: always;
+}
+
+.breaking-section {
+    padding-top: 100px;
 }
 
 .flex-panel__content {
